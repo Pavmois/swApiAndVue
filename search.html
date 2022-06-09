@@ -26,7 +26,7 @@
             <span v-else>У вас нет просмотренных фильмов</span>
         </div>
 
-        <h5>{{header}}</h5>
+        <h5>{{ initHeader }}</h5>
 
         <div id="search-console">
             <input type="text" id="search-input" style="color: #595959" v-model="request" @focus='request = ``'>
@@ -40,7 +40,7 @@
     </div>
 
 
-    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
     <script>
         let initHeader = "То что ищешь ты введи ...";
